@@ -17,7 +17,16 @@ const image = [
     choice1: "sunade",
     choice2: "deidara",
     choice3: "ino",
-    choice4: "sakura",
+    choice4: "temari",
+  },
+  {
+    imageFull: "./asset/orochimaru.png",
+    imageCrop: "./asset/orochimaru-crop.png",
+    answear: "orochimaru",
+    choice1: "yamato",
+    choice2: "sai",
+    choice3: "orochimaru",
+    choice4: "mitsuki",
   },
   {
     imageFull: "./asset/sarutobi.jpg",
@@ -38,13 +47,22 @@ const image = [
     choice4: "Jiraiya",
   },
   {
-    imageFull: "./asset/patrick.jpg",
-    imageCrop: "./asset/patrick-crop.jpg",
-    answear: "patrick akatsuki",
-    choice1: "konan akatsuki",
-    choice2: "konan akatsuki",
-    choice3: "kisame akatsuki",
-    choice4: "patrick akatsuki",
+    imageFull: "./asset/danzo.jpg",
+    imageCrop: "./asset/danzo-crop.jpg",
+    answear: "danzo",
+    choice1: "shisui",
+    choice2: "obito",
+    choice3: "itachi",
+    choice4: "danzo",
+  },
+  {
+    imageFull: "./asset/pakhaji.jpg",
+    imageCrop: "./asset/pakhaji-crop.jpg",
+    answear: "boloto",
+    choice1: "boruto",
+    choice2: "naruto",
+    choice3: "boloto",
+    choice4: "minato",
   },
 ];
 
@@ -86,7 +104,9 @@ for (let i = 0; i < 4; i++) {
 
 const nextButton = document.getElementById("next");
 nextButton.addEventListener("click", function () {
-  indexImage++;
+  if(indexImage<6){
+    indexImage++;
+  }
   for (let j = 1; j <= 4; j++) {
     const disabledBtn = document.getElementById(`buttonId${j}`);
     disabledBtn.disabled = false;
