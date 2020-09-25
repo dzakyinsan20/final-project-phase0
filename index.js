@@ -2,8 +2,8 @@ let indexImage = 0;
 let score = 0;
 const image = [
   {
-    imageFull: "sasuke.jpg",
-    imageCrop: "sasuke-crop.jpg",
+    imageFull: "./asset/sasuke.jpg",
+    imageCrop: "./asset/sasuke-crop.jpg",
     answear: "sasuke",
     choice1: "sasuke",
     choice2: "itachi",
@@ -11,8 +11,8 @@ const image = [
     choice4: "shisui",
   },
   {
-    imageFull: "ino.jpg",
-    imageCrop: "ino-crop.jpg",
+    imageFull: "./asset/ino.jpg",
+    imageCrop: "./asset/ino-crop.jpg",
     answear: "ino",
     choice1: "sunade",
     choice2: "deidara",
@@ -20,8 +20,8 @@ const image = [
     choice4: "sakura",
   },
   {
-    imageFull: "sarutobi.jpg",
-    imageCrop: "sarutobi-crop.jpg",
+    imageFull: "./asset/sarutobi.jpg",
+    imageCrop: "./asset/sarutobi-crop.jpg",
     answear: "Hiruzen Sarutobi",
     choice1: "Izuma Sarutobi",
     choice2: "Hiruzen Sarutobi",
@@ -29,8 +29,8 @@ const image = [
     choice4: "Mirai Sarutobi",
   },
   {
-    imageFull: "jiraiya.png",
-    imageCrop: "jiraiya-crop.png",
+    imageFull: "./asset/jiraiya.png",
+    imageCrop: "./asset/jiraiya-crop.png",
     answear: "Jiraiya",
     choice1: "Kiba",
     choice2: "Izuma ",
@@ -38,8 +38,8 @@ const image = [
     choice4: "Jiraiya",
   },
   {
-    imageFull: "patrick.jpg",
-    imageCrop: "patrick-crop.jpg",
+    imageFull: "./asset/patrick.jpg",
+    imageCrop: "./asset/patrick-crop.jpg",
     answear: "patrick akatsuki",
     choice1: "konan akatsuki",
     choice2: "konan akatsuki",
@@ -81,9 +81,9 @@ for (let i = 0; i < 4; i++) {
         disabledBtn.disabled = true;
       }
     }
-    
   });
 }
+
 const nextButton = document.getElementById("next");
 nextButton.addEventListener("click", function () {
   indexImage++;
