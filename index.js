@@ -66,6 +66,8 @@ const image = [
   },
 ];
 
+let music = new Audio("./naruto-song.mp3");
+
 function gererateImage() {
   document.getElementById("stage").innerText = indexImage + 1;
   const imageElement = document.getElementById("srcImg");
@@ -101,10 +103,14 @@ for (let i = 0; i < 4; i++) {
     }
   });
 }
+const tombolSemangat = document.getElementById("play");
+tombolSemangat.addEventListener("click", function () {
+  music.play();
+});
 
 const nextButton = document.getElementById("next");
 nextButton.addEventListener("click", function () {
-  if(indexImage<6){
+  if (indexImage < 6) {
     indexImage++;
   }
   for (let j = 1; j <= 4; j++) {
